@@ -18,3 +18,9 @@ code {
 .active {
   color:#fff!important;
 }
+
+@media screen and (max-width:768px) {
+  .active {
+    color:#00b4d8!important;
+  }
+}

@@ -15,13 +15,16 @@ const Navbar = () => {
             <Link to={"/"} className={styles.logo}>tesisatizmirde</Link>
             <div className={styles.links}>
                 <NavLink className={`${styles.link} ${styles.home}`} to={"/"}>
-                    {window.innerWidth > 768 ? "Anasayfa" : <HomeOutlined />}
+                    <span className={styles.link_text}>Anasayfa</span>
+                    <HomeOutlined className={styles.link_icon} />
                 </NavLink>
                 <NavLink className={`${styles.link} ${styles.about}`} to={"/hakkimizda"}>
-                    {window.innerWidth > 768 ? "Hakkımızda" : <UserOutlined />}
+                    <span className={styles.link_text}>Hakkımızda</span>
+                    <UserOutlined className={styles.link_icon} />
                 </NavLink>
                 <NavLink className={`${styles.link} ${styles.contact}`} to={"/iletisim"}>
-                    {window.innerWidth > 768 ? "İletişim" : <PhoneOutlined />}
+                    <span className={styles.link_text}>İletişim</span>
+                    <PhoneOutlined className={styles.link_icon} />
                 </NavLink>
             </div>
             <div className={styles.social_media}>
