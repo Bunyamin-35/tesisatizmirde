@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./hero.module.scss"
+import hero2 from "../../assets/hero2.webp"
 
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
                 <h2>İŞİMİZİN <span>ARKASINDAYIZ</span></h2>
             </article>
             <article className={styles.hero_right}>
-                <div className={styles.hero_image}></div>
+                <img src={hero2} alt="" />
             </article>
         </section>
     )
