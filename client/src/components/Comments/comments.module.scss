@@ -1,0 +1,19 @@
+.comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 80px;
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: 20px;
+        color: #000;
+
+        span {
+            color: #0077b6;
+        }
+    }
+
+    
+}
