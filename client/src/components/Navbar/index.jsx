@@ -10,12 +10,31 @@ import {
 
 import logo from "../../assets/logo.png"
 import { useInView } from 'react-intersection-observer';
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
     const { ref: titleRef, inView: isTitleVisible } = useInView()
 
+    const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+    const scrollThreshold = 80; // Adjust this threshold as needed
+
+    const handleScroll = () => {
+        if (window.scrollY > scrollThreshold) {
+            setIsNavbarFixed(true);
+        } else {
+            setIsNavbarFixed(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className={styles.navigation_bar}>
+        <nav className={`${styles.navigation_bar}  ${isNavbarFixed && styles.navbar_fixed}`}>
             <Link to={"/"} className={styles.logo}>
                 <img src={logo} alt="" />
             </Link>
