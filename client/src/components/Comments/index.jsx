@@ -17,7 +17,6 @@ const Comments = () => {
                 )
                 }
             </article>
-
         </section>
     )
 }

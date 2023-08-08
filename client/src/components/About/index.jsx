@@ -7,7 +7,7 @@ const About = () => {
     <section className={styles.about}>
       <article className={styles.about_text}>
         <h2>Biz <span>Kimiz?</span></h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae velit asperiores ducimus, fugit aliquam hic reiciendis accusamus nulla voluptates adipisci deleniti molestias impedit vel beatae. Voluptatem quae odit aliquam cum!</p>
+        <p>Sektörde geçen on yılı aşkın süre boyunca, binlerce başarılı projeye imza attık ve müşterilerimize en yüksek kalitede hizmet sunma konusundaki taahhüdümüzü sürdürdük. Alanında uzman ekip arkadaşlarımızla bir araya gelerek, her türlü sıhhi tesisat ihtiyacınızı karşılamak için donanımlıyız.</p>
         <button>Daha Fazlası...</button>
       </article>
       <article className={styles.about_image}>
