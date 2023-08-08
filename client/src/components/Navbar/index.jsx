@@ -9,8 +9,10 @@ import {
 } from "@ant-design/icons"
 
 import logo from "../../assets/logo.png"
+import { useInView } from 'react-intersection-observer';
 
 const Navbar = () => {
+    const { ref: titleRef, inView: isTitleVisible } = useInView()
 
     return (
         <nav className={styles.navigation_bar}>
@@ -26,15 +28,25 @@ const Navbar = () => {
                     <span className={styles.link_text}>Hakkımızda</span>
                     <UserOutlined className={styles.link_icon} />
                 </NavLink>
+                <NavLink className={`${styles.link} ${styles.about}`} to={"/hakkimizda"}>
+                    <span className={styles.link_text}>Hizmetlerimiz</span>
+                    <UserOutlined className={styles.link_icon} />
+                </NavLink>
                 <NavLink className={`${styles.link} ${styles.contact}`} to={"/iletisim"}>
                     <span className={styles.link_text}>İletişim</span>
                     <PhoneOutlined className={styles.link_icon} />
                 </NavLink>
             </div>
             <div className={styles.social_media}>
-
-                <Link to={"/"}><InstagramOutlined className={`${styles.icon} ${styles.instagram_icon}`} /></Link>
-                <a className={`${styles.icon} ${styles.whatsapp_icon}`} href="https://wa.me/+905453992630" target="_blank" rel="noopener noreferrer"><WhatsAppOutlined /></a>
+                <Link to={"/"}>
+                    <InstagramOutlined className={`${styles.icon} ${styles.instagram_icon}`} />
+                </Link>
+                <a className={`${styles.icon} ${styles.whatsapp_icon}`} href="https://wa.me/+905453992630" target="_blank" rel="noopener noreferrer">
+                    <WhatsAppOutlined />
+                </a>
+                <a className={`${styles.icon} ${styles.phone_icon}`} href="tel:+905453992630" target="_blank" rel="noopener noreferrer">
+                    <PhoneOutlined />
+                </a>
             </div>
         </nav>
     )

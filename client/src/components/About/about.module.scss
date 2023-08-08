@@ -8,7 +8,7 @@
         align-items: flex-start;
         width: 100%;
 
-        h2 {
+        .title {
             font-size: 60px;
             margin-bottom: 20px;
             color: #000;
@@ -18,7 +18,9 @@
             }
         }
 
-        p {
+
+
+        .text {
             font-size: 18px;
             margin-top: 0;
             width: 80%;
@@ -59,6 +61,19 @@
 
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 @media screen and (max-width:980px) {
 
     .about {
@@ -66,31 +81,31 @@
         flex-direction: column;
         gap: 50px;
         margin: 50px 80px;
-    
+
         .about_text {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             width: 100%;
-    
+
             h2 {
                 font-size: 50px;
                 margin-bottom: 20px;
                 color: #000;
-    
+
                 span {
                     color: #0077b6;
                 }
             }
-    
+
             p {
                 font-size: 16px;
                 margin-top: 0;
                 width: 100%;
                 color: #3d405b;
-    
+
             }
-    
+
             button {
                 width: 200px;
                 border: none;
@@ -101,26 +116,26 @@
                 background: #3d405b;
                 cursor: pointer;
                 transition: .5s ease-in-out;
-    
+
                 &:hover {
                     background: #0077b6;
                 }
-    
+
             }
         }
-    
+
         .about_image {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-    
+
             img {
                 width: 100%;
                 height: auto;
             }
         }
-    
+
     }
 
 }
@@ -132,31 +147,31 @@
         flex-direction: column;
         gap: 50px;
         margin: 50px 80px;
-    
+
         .about_text {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             width: 100%;
-    
+
             h2 {
                 font-size: 40px;
                 margin-bottom: 20px;
                 color: #000;
-    
+
                 span {
                     color: #0077b6;
                 }
             }
-    
+
             p {
                 font-size: 14px;
                 margin-top: 0;
                 width: 100%;
                 color: #3d405b;
-    
+
             }
-    
+
             button {
                 width: 160px;
                 border: none;
@@ -167,26 +182,26 @@
                 background: #3d405b;
                 cursor: pointer;
                 transition: .5s ease-in-out;
-    
+
                 &:hover {
                     background: #0077b6;
                 }
-    
+
             }
         }
-    
+
         .about_image {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
             img {
                 width: 100%;
                 height: auto;
             }
         }
-    
+
     }
 
 }

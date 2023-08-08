@@ -1,6 +1,8 @@
 @import "../Variables/variables";
 
 .navigation_bar {
+    // position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,13 +37,14 @@
         font-weight: 600;
         cursor: pointer;
 
-        .active {
-            color: red;
-        }
-
         .link {
             text-decoration: none;
             color: $links_color;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #fff;
+            }
 
             .link_icon {
                 display: none;
@@ -57,27 +60,45 @@
         gap: 1rem;
 
         .icon {
-            font-size: 25px;
+            font-size: 36px;
             cursor: pointer;
         }
 
         .instagram_icon {
+            height: 100%;
             color: #fff;
             transition: 0.3s ease-in-out;
 
+
             &:hover {
                 color: $insta_color;
-                font-size: 30px;
+                font-size: 40px;
             }
         }
 
         .whatsapp_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: #fff;
             transition: 0.3s ease-in-out;
+            height: 100%;
 
             &:hover {
                 color: $whatsapp_color;
-                font-size: 30px;
+                font-size: 40px;
+            }
+        }
+        .phone_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            transition: 0.3s ease-in-out;
+            height: 100%;
+
+            &:hover {
+                font-size: 40px;
             }
         }
     }

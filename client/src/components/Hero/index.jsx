@@ -2,12 +2,15 @@ import React from 'react'
 import styles from "./hero.module.scss"
 import hero2 from "../../assets/hero2.webp"
 
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
+  const { ref: titleRef, inView: isTitleVisible } = useInView()
+
     return (
         <section className={styles.hero}>
             <article className={styles.hero_left}>
-                <h2>İŞİMİZİN <span>ARKASINDAYIZ</span></h2>
+                <h2 className={`${styles.title} ${styles.hidden} ${isTitleVisible && styles.visible}`} ref={titleRef} >İŞİMİZİN <span>ARKASINDAYIZ</span></h2>
             </article>
             <article className={styles.hero_right}>
                 <img src={hero2} alt="" />

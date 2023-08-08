@@ -117,50 +117,30 @@ const Footer = () => {
 }
 export default Footer;
 
-// const Footer = () => {
-//     return (
-//         <section className={styles.footer}>
-//             <article className={styles.footer_up}>
-//                 <Link to={"/"} className={styles.logo}>
-//                     <img src={logo} alt="" />
-//                 </Link>
-//                 <div className={styles.service_list}>
-//                     <div className={styles.service_item}>Kalorifer Tesisatı</div>
-//                     <div className={styles.service_item}>Tadilat</div>
-//                     <div className={styles.service_item}>Yerden Isıtma</div>
-//                     <div className={styles.service_item}>Gömme Rezervuar</div>
-//                     <div className={styles.service_item}>Banyo Tadilatı</div>
-//                     <div className={styles.service_item}>Mutfak Tadilatı</div>
-//                     <div className={styles.service_item}>3D/3 Boyutlu Mimari Çizim</div>
-//                     <div className={styles.service_item}>Su Sayaç Kollektör Yenileme/Dizayn</div>
-//                     <div className={styles.service_item}>Çoklu Sayaç Dönüşümü</div>
-//                 </div>
-//             </article>
-//             <article className={styles.footer_down}>
-//                 <div className={styles.social_media}>
-//                     <Link to={"/"}><InstagramOutlined className={`${styles.icon} ${styles.instagram_icon}`} /></Link>
-//                     <Link to={"/"}><WhatsAppOutlined className={`${styles.icon} ${styles.whatsapp_icon}`} /></Link>
-//                     <Link to={"/"}><WhatsAppOutlined className={`${styles.icon} ${styles.whatsapp_icon}`} /></Link>
-//                 </div>
-//                 <div className={styles.links}>
-//                     <Link className={`${styles.link} ${styles.home}`} to={"/"}>
-//                         <span className={styles.link_text}>Anasayfa</span>
-//                         <HomeOutlined className={styles.link_icon} />
-//                     </Link>
-//                     <Link className={`${styles.link} ${styles.about}`} to={"/hakkimizda"}>
-//                         <span className={styles.link_text}>Hakkımızda</span>
-//                         <UserOutlined className={styles.link_icon} />
-//                     </Link>
-//                     <Link className={`${styles.link} ${styles.contact}`} to={"/iletisim"}>
-//                         <span className={styles.link_text}>İletişim</span>
-//                         <PhoneOutlined className={styles.link_icon} />
-//                     </Link>
-//                 </div>
-//                 <div className={styles.developer}>
-//                     @2023.All rights reserved.
-//                 </div>
-//             </article>
-//         </section>
-//     )
-// }
-
+{/* <div
+  class="mx-auto h-80 max-w-lg overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat shadow-lg"
+  style="background-image:url('https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp');">
+  <div class="mt-40">
+    <div class="bg-white p-4 sm:p-8">
+      <div
+        class="font-inter text-2xl font-extrabold tracking-tight text-black">
+        Majestic peaks, nature's embrace.
+      </div>
+      <div class="mt-1 text-sm font-medium text-slate-500">
+        Adventure calls, conquer mountain trails.
+      </div>
+      <p class="mt-4 leading-7 text-slate-500">
+        In the realm of towering mountains, where the air is crisp and
+        the vistas stretch endlessly, one finds solace, exhilaration,
+        and a profound connection with the untamed beauty of the natural
+        world.
+      </p>
+      <p class="mt-4 leading-7 text-slate-500">
+        As the sun rises over the rugged peaks, casting a golden glow on
+        the majestic landscape, a sense of awe fills the heart,
+        reminding us of the grandeur and power that reside in the
+        mountains.
+      </p>
+    </div>
+  </div>
+</div> */}
