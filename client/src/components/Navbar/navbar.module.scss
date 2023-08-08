@@ -7,26 +7,28 @@
     padding: 0 20px;
     border-bottom: .5px solid $links_color;
     background: #0077b6;
-    height: 80px;
+    height: auto;
 
     .logo {
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-basis: 20%;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 600;
-        padding: 5px 10px;
-        border-radius: 10px;
-        color: $logo_color;
-        background-color: $logo_bg;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        margin: 10px 10px;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            clip-path: circle(39% at 50% 45%);
+        }
     }
 
     .links {
         display: flex;
         justify-content: center;
-        flex-grow: 2;
+        align-items: center;
         gap: 20px;
         color: $links_color;
         font-size: 20px;
@@ -41,7 +43,7 @@
             text-decoration: none;
             color: $links_color;
 
-            .link_icon{
+            .link_icon {
                 display: none;
             }
         }
@@ -53,7 +55,6 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        flex-basis: 20%;
 
         .icon {
             font-size: 25px;
@@ -61,7 +62,7 @@
         }
 
         .instagram_icon {
-            color: $icon_color;
+            color: #fff;
             transition: 0.3s ease-in-out;
 
             &:hover {
@@ -71,7 +72,7 @@
         }
 
         .whatsapp_icon {
-            color: $icon_color;
+            color: #fff;
             transition: 0.3s ease-in-out;
 
             &:hover {
@@ -108,10 +109,11 @@
             .link {
                 font-size: 30px;
 
-                .link_text{
+                .link_text {
                     display: none;
                 }
-                .link_icon{
+
+                .link_icon {
                     display: block;
                 }
             }

@@ -6,13 +6,18 @@ const Comments = () => {
     return (
         <section className={styles.comments}>
             <h2>Müşteri <span>Yorumları</span></h2>
-            {data.map((item, key) => <ReviewCard
-                key={key}
-                image={item.image}
-                name={item.name}
-                text={item.text}
-            />)}
-            
+            <article className={styles.card_wrapper}>
+                {data.map((item, key) =>
+                    <ReviewCard
+                        key={key}
+                        image={item.image}
+                        name={item.name}
+                        text={item.text}
+                    />
+                )
+                }
+            </article>
+
         </section>
     )
 }

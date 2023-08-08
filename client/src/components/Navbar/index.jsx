@@ -8,11 +8,15 @@ import {
     PhoneOutlined
 } from "@ant-design/icons"
 
+import logo from "../../assets/logo.png"
+
 const Navbar = () => {
 
     return (
         <nav className={styles.navigation_bar}>
-            <Link to={"/"} className={styles.logo}>tesisatizmirde</Link>
+            <Link to={"/"} className={styles.logo}>
+                <img src={logo} alt="" />
+            </Link>
             <div className={styles.links}>
                 <NavLink className={`${styles.link} ${styles.home}`} to={"/"}>
                     <span className={styles.link_text}>Anasayfa</span>
@@ -28,8 +32,9 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div className={styles.social_media}>
+
                 <Link to={"/"}><InstagramOutlined className={`${styles.icon} ${styles.instagram_icon}`} /></Link>
-                <Link to={"/"}><WhatsAppOutlined className={`${styles.icon} ${styles.whatsapp_icon}`} /></Link>
+                <a className={`${styles.icon} ${styles.whatsapp_icon}`} href="https://wa.me/+905453992630" target="_blank" rel="noopener noreferrer"><WhatsAppOutlined /></a>
             </div>
         </nav>
     )
