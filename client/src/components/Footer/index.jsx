@@ -1,6 +1,3 @@
-
-
-
 import styles from "./footer.module.scss"
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
@@ -21,12 +18,14 @@ const Footer = () => {
             <div className={styles.footer_body}>
                 <div className={styles.grid_container}>
                     <div className={styles.grid_item_1}>
-                        <h6>
-                            <img src={logo} alt="" />
-                        </h6>
-                        <p>
+                        <div className={styles.logo}>
+                            <Link to={"/"}>
+                                <img src={logo} alt="" />
+                            </Link>
+                        </div>
+                        {/* <p>
                             Müşteri memnuniyeti önceliğimiz.
-                        </p>
+                        </p> */}
                     </div>
                     <div className={styles.grid_item_2}>
                         <h6>
@@ -90,7 +89,7 @@ const Footer = () => {
                         </p>
                         <p>
                             <a href="mailto:tesisatizmirde@gmail.com">
-                                <MailOutlined /> 
+                                <MailOutlined />
                                 tesisatizmirde@gmail.com
                             </a>
                         </p>

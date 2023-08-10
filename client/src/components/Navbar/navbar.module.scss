@@ -18,24 +18,35 @@
     background: #0077b6;
 
     transition: 0.3s;
-    padding: 5px 10px;
+    padding: 10px 10px;
     top: 0;
     z-index: 99;
     position: fixed;
 
     .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 140px;
-        height: auto;
-        margin: 10px 10px;
+        height: 140px;
+        transition: all 1s;
 
 
         img {
             width: 100%;
             height: 100%;
-            clip-path: circle(39% at 50% 45%);
+            border-radius: 20%;
+
+        }
+    }
+
+    .logo_fixed {
+        width: 100px;
+        height: 100px;
+        transition: all 1s;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20%;
         }
     }
 
@@ -121,6 +132,7 @@
     padding: 0 10px;
     /* Other fixed position styles */
 }
+
 .logo_fixed {
     width: 100px;
     height: auto;

@@ -35,7 +35,7 @@ const Navbar = () => {
 
     return (
         <nav className={`${styles.navigation_bar}  ${isNavbarFixed && styles.navbar_fixed}`}>
-            <Link to={"/"} className={styles.logo}>
+            <Link to={"/"} className={`${isNavbarFixed ? styles.logo_fixed :styles.logo}`}>
                 <img src={logo} alt="" />
             </Link>
             <div className={styles.links}>
@@ -43,15 +43,15 @@ const Navbar = () => {
                     <span className={styles.link_text}>Anasayfa</span>
                     <HomeOutlined className={styles.link_icon} />
                 </NavLink>
-                <NavLink className={`${styles.link} ${styles.about}`} to={"/hakkimizda"}>
+                <NavLink className={`${styles.link} ${styles.about}`} to={"/"}>
                     <span className={styles.link_text}>Hakkımızda</span>
                     <UserOutlined className={styles.link_icon} />
                 </NavLink>
-                <NavLink className={`${styles.link} ${styles.about}`} to={"/hakkimizda"}>
+                <NavLink className={`${styles.link} ${styles.about}`} to={"/"}>
                     <span className={styles.link_text}>Hizmetlerimiz</span>
                     <UserOutlined className={styles.link_icon} />
                 </NavLink>
-                <NavLink className={`${styles.link} ${styles.contact}`} to={"/iletisim"}>
+                <NavLink className={`${styles.link} ${styles.contact}`} to={"/"}>
                     <span className={styles.link_text}>İletişim</span>
                     <PhoneOutlined className={styles.link_icon} />
                 </NavLink>

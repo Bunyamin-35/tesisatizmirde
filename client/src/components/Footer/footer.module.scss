@@ -17,17 +17,16 @@
             gap: 1rem;
 
             .grid_item_1 {
-                h6 {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    margin-bottom: 16px;
+                .logo {
+                    // background: #fff;
+                    width: 140px;
+                    height: 140px;
+                    // border-radius: 20%;
 
                     img {
-                        width: 100px;
-                        height: 100px;
-                        margin-right: 12px;
-                        clip-path: circle(39% at 50% 45%);
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20%;
                     }
                 }
             }
