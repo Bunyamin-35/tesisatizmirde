@@ -43,6 +43,18 @@
     }
 }
 
+.hidden_img {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100px);
+    transition: all 2s;
+}
+
+.visible_img {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
 
 @media screen and (max-width:980px) {
     .gallery {
