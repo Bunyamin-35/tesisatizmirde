@@ -1,5 +1,5 @@
 import styles from "./comments.module.scss"
-import data from "../../constants/review.jsx"
+import { reviews } from "../../constants/index.jsx"
 import ReviewCard from "../ReviewCard/index.jsx"
 const Comments = () => {
 
@@ -7,7 +7,7 @@ const Comments = () => {
         <section className={styles.comments}>
             <h2>Müşteri <span>Yorumları</span></h2>
             <article className={styles.card_wrapper}>
-                {data.map((item, key) =>
+                {reviews.map((item, key) =>
                     <ReviewCard
                         key={key}
                         image={item.image}

@@ -1,4 +1,18 @@
-const reviews = [
+
+import gallery1 from "../assets/gallery1.webp"
+import gallery2 from "../assets/gallery2.webp"
+import gallery3 from "../assets/gallery3.webp"
+import gallery4 from "../assets/gallery4.webp"
+import gallery5 from "../assets/gallery5.webp"
+import gallery6 from "../assets/gallery6.webp"
+import gallery7 from "../assets/gallery7.webp"
+import gallery8 from "../assets/gallery8.webp"
+import gallery9 from "../assets/gallery9.webp"
+import gallery10 from "../assets/gallery10.webp"
+import gallery11 from "../assets/gallery11.webp"
+import gallery12 from "../assets/gallery12.webp"
+import gallery13 from "../assets/gallery13.webp"
+export const reviews = [
     {
         id: 1,
         name: 'susan smith',
@@ -37,4 +51,59 @@ const reviews = [
     },
 ];
 
-export default reviews;
+export const galleryimage = [   
+    {
+        id: 1,
+        src: gallery1
+    },
+    {
+        id: 2,
+        src: gallery2
+    },
+    {
+        id: 3,
+        src: gallery3
+    },
+    {
+        id: 4,
+        src: gallery4
+    },
+    {
+        id: 5,
+        src: gallery5
+    },
+    {
+        id: 6,
+        src: gallery6
+    },
+    {
+        id: 7,
+        src: gallery7
+    },
+    {
+        id: 8,
+        src: gallery8
+    },
+    {
+        id: 9,
+        src: gallery9
+    },
+    {
+        id: 10,
+        src: gallery10
+    },
+    {
+        id: 11,
+        src: gallery11
+    },
+    {
+        id: 12,
+        src: gallery12
+    },
+    {
+        id: 13,
+        src: gallery13
+    },
+]
+
+
