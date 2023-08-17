@@ -12,10 +12,8 @@ const Gallery = () => {
             <Image.PreviewGroup>
                 <article className={styles.gallery_images}>
                     {galleryimage.map((img, key) => (
-                        
-                        <div  key={key} className={styles.gallery_image}>
-                            {console.log("img",img.src)}
-                            <Image width={380} height={320} className={styles.img} src={img.src} />
+                        <div key={key} className={styles.gallery_image}>
+                            <Image width={500} height={500}  className={styles.img} src={img.src} />
                         </div>
                     ))}
                 </article>
