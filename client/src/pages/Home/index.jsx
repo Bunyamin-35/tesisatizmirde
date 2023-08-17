@@ -10,11 +10,11 @@ import Services from '../../components/Services';
 const Home = () => {
   return (
     <div>
-        <Navbar/>
-        <Hero/>
-        <About />
-        <Services/>
-        <Gallery />
+        {/* <Navbar/> */}
+        {/* <Hero/> */}
+        {/* {/* <About /> */}
+        {/* <Services/> */}
+        {/* <Gallery /> */}
         {/* <Comments/> */}
         <Footer/>
     </div>
