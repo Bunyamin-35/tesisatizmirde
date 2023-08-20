@@ -13,6 +13,7 @@ import {
 } from "@ant-design/icons"
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <footer className={styles.footer}>
             <div className={styles.footer_body}>
@@ -106,7 +107,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.footer_copyrights}>
-                <span>© 2023 Copyright:All rights reserved</span>
+                <span>{currentYear} © <a className={styles.copyrights} href="https://www.linkedin.com/in/bulutbunyamin/">Bünyamin BULUT</a>- Tüm Hakları Saklıdır.</span>
             </div>
         </footer>
     )
