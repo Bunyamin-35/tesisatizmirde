@@ -2,19 +2,19 @@ import React, { useEffect } from 'react'
 import Navbar from '../../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 
-const Contact = () => {
+const Services = () => {
   const navigate = useNavigate()
-  useEffect(()=>{
-    setTimeout(()=>{
+  useEffect(() => {
+    setTimeout(() => {
       navigate("/")
-    },1)
-  },[])
+    }, 1)
+  }, [])
   return (
     <div>
-        <Navbar/>
-        <div>Contact</div>
+      <Navbar />
+      <div>Services</div>
     </div>
   )
 }
 
-export default Contact;
+export default Services;

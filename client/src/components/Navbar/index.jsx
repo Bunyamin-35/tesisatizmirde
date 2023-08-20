@@ -43,15 +43,15 @@ const Navbar = () => {
                     <span className={styles.link_text}>Anasayfa</span>
                     <HomeOutlined className={styles.link_icon} />
                 </NavLink>
-                <NavLink className={`${styles.link} ${styles.about}`} to={"/"}>
+                <NavLink className={`${styles.link} ${styles.about}`} to={"/hakkimizda"}>
                     <span className={styles.link_text}>Hakkımızda</span>
                     <UserOutlined className={styles.link_icon} />
                 </NavLink>
-                <NavLink className={`${styles.link} ${styles.about}`} to={"/"}>
+                <NavLink className={`${styles.link} ${styles.about}`} to={"/hizmetlerimiz"}>
                     <span className={styles.link_text}>Hizmetlerimiz</span>
                     <UserOutlined className={styles.link_icon} />
                 </NavLink>
-                <NavLink className={`${styles.link} ${styles.contact}`} to={"/"}>
+                <NavLink className={`${styles.link} ${styles.contact}`} to={"/iletisim"}>
                     <span className={styles.link_text}>İletişim</span>
                     <PhoneOutlined className={styles.link_icon} />
                 </NavLink>
