@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Navbar from '../../components/Navbar';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from "react-helmet"
 
 const Services = () => {
   const navigate = useNavigate()
@@ -11,6 +12,10 @@ const Services = () => {
   }, [])
   return (
     <div>
+      <Helmet>
+        <title>Hizmetlerimiz | Yetgin Tesisat</title>
+        <link rel="canonical" href="/hizmetlerimiz" />
+      </Helmet>
       <Navbar />
       <div>Services</div>
     </div>

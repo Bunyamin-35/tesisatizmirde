@@ -6,17 +6,23 @@ import Gallery from "../../components/Gallery"
 import Comments from '../../components/Comments';
 import Footer from '../../components/Footer';
 import Services from '../../components/Services';
+import { Helmet } from "react-helmet"
 
 const Home = () => {
   return (
     <div>
-        <Navbar/>
-        <Hero/>
-        <About />
-        <Services/>
-        <Gallery />
-        {/* <Comments/> */}
-        <Footer/>
+      <Helmet>
+        <title>Ana Sayfa | Yetgin Tesisat</title>
+        <meta name='description' content='anasayfa description'/>
+        <link rel="canonical" href="/" />
+      </Helmet>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Gallery />
+      {/* <Comments/> */}
+      <Footer />
     </div>
   )
 }
