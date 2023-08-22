@@ -8,6 +8,9 @@ import {
     PhoneOutlined
 } from "@ant-design/icons"
 
+import { FaTools } from 'react-icons/fa';
+
+
 import logo from "../../assets/logo.png"
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from "react";
@@ -49,7 +52,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink className={`${styles.link} ${styles.about}`} to={"/hizmetlerimiz"}>
                     <span className={styles.link_text}>Hizmetlerimiz</span>
-                    <UserOutlined className={styles.link_icon} />
+                    <FaTools className={styles.link_icon} />
                 </NavLink>
                 <NavLink className={`${styles.link} ${styles.contact}`} to={"/iletisim"}>
                     <span className={styles.link_text}>İletişim</span>
