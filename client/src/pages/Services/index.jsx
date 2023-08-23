@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react'
 import Navbar from '../../components/Navbar';
-import { useNavigate } from 'react-router-dom';
+import Hero from '../../components/Hero';
+import About from "../../components/About"
+import Gallery from "../../components/Gallery"
+import Comments from '../../components/Comments';
+import Footer from '../../components/Footer';
+import Services from '../../components/Services';
 import { Helmet } from "react-helmet"
 
-const Services = () => {
-  const navigate = useNavigate()
-  useEffect(() => {
-    setTimeout(() => {
-      navigate("/")
-    }, 1)
-  }, [])
+const ServicesPage = () => {
   return (
     <div>
       <Helmet>
@@ -17,9 +15,14 @@ const Services = () => {
         <link rel="canonical" href="/hizmetlerimiz" />
       </Helmet>
       <Navbar />
-      <div>Services</div>
+      <Hero />
+      <About />
+      <Services />
+      <Gallery />
+      {/* <Comments/> */}
+      <Footer />
     </div>
   )
 }
 
-export default Services;
+export default ServicesPage;
