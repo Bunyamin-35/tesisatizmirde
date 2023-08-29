@@ -60,11 +60,9 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div className={styles.social_media}>
-                <Link to={"/"}>
-                    <a className={`${styles.icon} ${styles.instagram_icon}`} href="https://www.instagram.com/tesisat_izmirde/">
-                        <InstagramOutlined />
-                    </a>
-                </Link>
+                <a to={"https://www.instagram.com/tesisat_izmirde/"} className={`${styles.icon} ${styles.instagram_icon}`}  target="_blank" rel="noopener noreferrer">
+                    <InstagramOutlined />
+                </a>
                 <a className={`${styles.icon} ${styles.whatsapp_icon}`} href="https://wa.me/+905453992630" target="_blank" rel="noopener noreferrer">
                     <WhatsAppOutlined />
                 </a>
