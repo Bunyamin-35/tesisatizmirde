@@ -38,7 +38,7 @@ const Navbar = () => {
 
     return (
         <nav className={`${styles.navigation_bar}  ${isNavbarFixed && styles.navbar_fixed}`}>
-            <Link to={"/"} className={`${isNavbarFixed ? styles.logo_fixed :styles.logo}`}>
+            <Link to={"/"} className={`${isNavbarFixed ? styles.logo_fixed : styles.logo}`}>
                 <img src={logo} alt="" />
             </Link>
             <div className={styles.links}>
@@ -61,7 +61,9 @@ const Navbar = () => {
             </div>
             <div className={styles.social_media}>
                 <Link to={"/"}>
-                    <InstagramOutlined className={`${styles.icon} ${styles.instagram_icon}`} />
+                    <a className={`${styles.icon} ${styles.instagram_icon}`} href="https://www.instagram.com/tesisat_izmirde/">
+                        <InstagramOutlined />
+                    </a>
                 </Link>
                 <a className={`${styles.icon} ${styles.whatsapp_icon}`} href="https://wa.me/+905453992630" target="_blank" rel="noopener noreferrer">
                     <WhatsAppOutlined />
