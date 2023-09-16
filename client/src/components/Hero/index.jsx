@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <section className={styles.hero}>
             <article className={styles.hero_left}>
-                <h2 className={`${styles.title} ${styles.hidden} ${isTitleVisible && styles.visible}`} ref={titleRef} >İŞİMİZİN <span>ARKASINDAYIZ</span></h2>
+                <h1 className={`${styles.title} ${styles.hidden} ${isTitleVisible && styles.visible}`} ref={titleRef} >İŞİMİZİN <span>ARKASINDAYIZ</span></h1>
             </article>
             <article className={styles.hero_right}>
                 <img src={hero2} alt="" />
