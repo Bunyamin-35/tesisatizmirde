@@ -13,7 +13,7 @@ const AboutPage = () => {
     <div>
       <Helmet>
         <title>Hakkımızda | Yetgin Tesisat</title>
-        <link rel="canonical" href="/hakkimizda" />
+        <link rel="canonical" href="https://www.tesisatizmirde.com/hakkimizda" />
       </Helmet>
       <Navbar />
       <Hero />

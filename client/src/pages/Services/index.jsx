@@ -12,7 +12,7 @@ const ServicesPage = () => {
     <div>
       <Helmet>
         <title>Hizmetlerimiz | Yetgin Tesisat</title>
-        <link rel="canonical" href="/hizmetlerimiz" />
+        <link rel="canonical" href="https://www.tesisatizmirde.com/hizmetlerimiz" />
       </Helmet>
       <Navbar />
       <Hero />

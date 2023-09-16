@@ -13,7 +13,7 @@ const Contact = () => {
     <div>
       <Helmet>
         <title>İletişim | Yetgin Tesisat</title>
-        <link rel="canonical" href="/iletisim" />
+        <link rel="canonical" href="https://www.tesisatizmirde.com/iletisim" />
       </Helmet>
       <Navbar />
       <Hero />

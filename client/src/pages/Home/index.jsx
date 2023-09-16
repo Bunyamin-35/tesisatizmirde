@@ -13,8 +13,8 @@ const Home = () => {
     <div>
       <Helmet>
         <title>Ana Sayfa | Yetgin Tesisat</title>
-        <meta name='description' content='anasayfa description'/>
-        <link rel="canonical" href="/" />
+        <meta name='description' content='anasayfa description Kanalizasyon açma,izmir tesisatçı, izmir tesisat, tıkanık lavabo açma, 24 saat hizmet, su tesisatçı izmir, bostanlı tesisatcı, karşıyaka tesisatcı, çiğli tesisatcı, atakent tesisatçı, karşıyaka tesisatçı, bayraklı tesisatçı,konak tesisatçı, karabağlar tesisatçı'/>
+        <link rel="canonical" href="https://www.tesisatizmirde.com/" />
       </Helmet>
       <Navbar />
       <Hero />
